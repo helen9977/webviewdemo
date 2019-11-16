@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         settings.setJavaScriptEnabled(true);
         settings.setCacheMode(WebSettings.LOAD_NO_CACHE);
         webView.loadUrl("http://johnyu.cn/face1.html");
-        webView.addJavascriptInterface(new MyService(this),"myService");
+        webView.addJavascriptInterface(new MyService(),"myService");
 
 
         navView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
